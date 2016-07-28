@@ -1,0 +1,238 @@
+[
+  {
+    "op": "rdf-extension/save-rdf-schema",
+    "description": "Save RDF schema skeleton",
+    "schema": {
+      "baseUri": "http://127.0.0.1:3333/",
+      "prefixes": [
+        {
+          "name": "rdfs",
+          "uri": "http://www.w3.org/2000/01/rdf-schema#"
+        },
+        {
+          "name": "dcat",
+          "uri": "http://www.w3.org/ns/dcat#"
+        },
+        {
+          "name": "foaf",
+          "uri": "http://xmlns.com/foaf/0.1/"
+        },
+        {
+          "name": "dct",
+          "uri": "http://purl.org/dc/terms/"
+        },
+        {
+          "name": "myns",
+          "uri": "http://myhost.com/myns/"
+        },
+        {
+          "name": "xsd",
+          "uri": "http://www.w3.org/2001/XMLSchema#"
+        },
+        {
+          "name": "owl",
+          "uri": "http://www.w3.org/2002/07/owl#"
+        },
+        {
+          "name": "rdf",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        },
+        {
+          "name": "skos",
+          "uri": "http://www.w3.org/2004/02/skos/core#"
+        }
+      ],
+      "rootNodes": [
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "value",
+          "isRowNumberCell": false,
+          "columnName": "Organisation",
+          "rdfTypes": [
+            {
+              "uri": "http://xmlns.com/foaf/0.1/Organization",
+              "curie": "foaf:Organization"
+            }
+          ],
+          "links": [
+            {
+              "uri": "http://xmlns.com/foaf/0.1/name",
+              "curie": "foaf:name",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Organisation"
+              }
+            },
+            {
+              "uri": "http://xmlns.com/foaf/0.1/member",
+              "curie": "foaf:member",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "value",
+                "isRowNumberCell": true,
+                "rdfTypes": [
+                  {
+                    "uri": "http://xmlns.com/foaf/0.1/Person",
+                    "curie": "foaf:Person"
+                  }
+                ],
+                "links": [
+                  {
+                    "uri": "http://xmlns.com/foaf/0.1/name",
+                    "curie": "foaf:name",
+                    "target": {
+                      "nodeType": "cell-as-literal",
+                      "expression": "value",
+                      "isRowNumberCell": false,
+                      "columnName": "Name"
+                    }
+                  },
+                  {
+                    "uri": "http://xmlns.com/foaf/0.1/title",
+                    "curie": "foaf:title",
+                    "target": {
+                      "nodeType": "cell-as-literal",
+                      "expression": "value",
+                      "isRowNumberCell": false,
+                      "columnName": "Job Title"
+                    }
+                  },
+                  {
+                    "uri": "annualPayRate",
+                    "curie": ":annualPayRate",
+                    "target": {
+                      "nodeType": "cell-as-literal",
+                      "expression": "value",
+                      "isRowNumberCell": false,
+                      "columnName": "Annual pay rate - including taxable benefits and allowances"
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "op": "rdf-extension/save-rdf-schema",
+    "description": "Save RDF schema skeleton",
+    "schema": {
+      "baseUri": "http://127.0.0.1:3333/",
+      "prefixes": [
+        {
+          "name": "rdfs",
+          "uri": "http://www.w3.org/2000/01/rdf-schema#"
+        },
+        {
+          "name": "dcat",
+          "uri": "http://www.w3.org/ns/dcat#"
+        },
+        {
+          "name": "foaf",
+          "uri": "http://xmlns.com/foaf/0.1/"
+        },
+        {
+          "name": "dct",
+          "uri": "http://purl.org/dc/terms/"
+        },
+        {
+          "name": "myns",
+          "uri": "http://myhost.com/myns/"
+        },
+        {
+          "name": "xsd",
+          "uri": "http://www.w3.org/2001/XMLSchema#"
+        },
+        {
+          "name": "owl",
+          "uri": "http://www.w3.org/2002/07/owl#"
+        },
+        {
+          "name": "rdf",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        },
+        {
+          "name": "skos",
+          "uri": "http://www.w3.org/2004/02/skos/core#"
+        }
+      ],
+      "rootNodes": [
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "value",
+          "isRowNumberCell": false,
+          "columnName": "Organisation",
+          "rdfTypes": [
+            {
+              "uri": "http://xmlns.com/foaf/0.1/Organization",
+              "curie": "foaf:Organization"
+            }
+          ],
+          "links": [
+            {
+              "uri": "http://xmlns.com/foaf/0.1/name",
+              "curie": "foaf:name",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Organisation"
+              }
+            },
+            {
+              "uri": "http://xmlns.com/foaf/0.1/member",
+              "curie": "foaf:member",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "value",
+                "isRowNumberCell": true,
+                "rdfTypes": [
+                  {
+                    "uri": "http://xmlns.com/foaf/0.1/Person",
+                    "curie": "foaf:Person"
+                  }
+                ],
+                "links": [
+                  {
+                    "uri": "http://xmlns.com/foaf/0.1/name",
+                    "curie": "foaf:name",
+                    "target": {
+                      "nodeType": "cell-as-literal",
+                      "expression": "value",
+                      "isRowNumberCell": false,
+                      "columnName": "Name"
+                    }
+                  },
+                  {
+                    "uri": "http://xmlns.com/foaf/0.1/title",
+                    "curie": "foaf:title",
+                    "target": {
+                      "nodeType": "cell-as-literal",
+                      "expression": "value",
+                      "isRowNumberCell": false,
+                      "columnName": "Job Title"
+                    }
+                  },
+                  {
+                    "uri": "annualPayRate",
+                    "curie": ":annualPayRate",
+                    "target": {
+                      "nodeType": "cell-as-literal",
+                      "expression": "value",
+                      "isRowNumberCell": false,
+                      "columnName": "Annual pay rate - including taxable benefits and allowances"
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    }
+  }
+]
